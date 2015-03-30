@@ -1,15 +1,15 @@
 require 'sinatra'
 
 get '/' do
-  @name = %w(Amigo Oscar Viking).sample
+  @names = %w( Angelo Omar Tupac ).sample
   erb :index
 end
 
 get '/hello' do
-  @visitor = params[:name]
+  @visitor =params[:name]
   erb :index
 end
 
 get '/secret' do
-  'this is a secret page'
+  'This is a secret page.'
 end
